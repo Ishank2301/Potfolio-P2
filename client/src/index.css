@@ -520,6 +520,42 @@ input[type="range"] {
   gap: 0.45rem;
 }
 
+.contact-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2rem;
+  align-items: end;
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 5rem 0 3rem;
+  scroll-margin-top: 6rem;
+}
+
+.contact-actions {
+  display: grid;
+  gap: 0.7rem;
+  min-width: min(100%, 22rem);
+}
+
+.contact-actions a,
+.contact-actions span {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 3.3rem;
+  padding: 0 1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(244, 251, 247, 0.06);
+  color: var(--text);
+  font-weight: 850;
+}
+
+.contact-actions a:hover {
+  border-color: rgba(85, 242, 189, 0.5);
+  color: var(--mint);
+}
+
 @media (max-width: 860px) {
   .hero-section {
     grid-template-columns: 1fr;
@@ -546,6 +582,10 @@ input[type="range"] {
   }
 
   .command-deck {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-section {
     grid-template-columns: 1fr;
   }
 }
