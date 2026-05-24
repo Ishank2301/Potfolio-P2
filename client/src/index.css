@@ -322,12 +322,61 @@ h2 {
   line-height: 1.65;
 }
 
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.skill-card {
+  display: grid;
+  gap: 1rem;
+  min-height: 13rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: linear-gradient(145deg, rgba(106, 183, 255, 0.1), rgba(244, 251, 247, 0.04));
+}
+
+.skill-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--blue);
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.chip-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+  gap: 0.5rem;
+}
+
+.chip-cloud span {
+  padding: 0.48rem 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(7, 17, 15, 0.58);
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 750;
+}
+
 @media (max-width: 860px) {
   .hero-section {
     grid-template-columns: 1fr;
   }
 
   .section-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
     grid-template-columns: 1fr;
   }
 }
