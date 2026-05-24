@@ -113,15 +113,21 @@ a {
   gap: 0.35rem;
 }
 
-.intro-panel {
+.hero-section {
   display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.72fr);
   min-height: 100vh;
-  align-content: center;
-  gap: 1rem;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
   width: min(1120px, calc(100% - 2rem));
   margin: 0 auto;
-  padding: 5rem 0;
+  padding: 7rem 0 5rem;
   scroll-margin-top: 6rem;
+}
+
+.hero-copy {
+  display: grid;
+  gap: 1rem;
 }
 
 @media (max-width: 720px) {
@@ -162,4 +168,89 @@ h1 {
   color: var(--muted);
   font-size: clamp(1.05rem, 2vw, 1.35rem);
   line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 0.6rem;
+}
+
+.primary-action,
+.secondary-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding: 0 1.1rem;
+  border-radius: 999px;
+  font-weight: 900;
+}
+
+.primary-action {
+  gap: 0.45rem;
+  background: var(--mint);
+  color: #06221a;
+}
+
+.secondary-action {
+  border: 1px solid var(--line);
+  background: rgba(244, 251, 247, 0.07);
+}
+
+.signal-board {
+  display: grid;
+  gap: 1.1rem;
+  padding: 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(160deg, rgba(244, 251, 247, 0.1), rgba(244, 251, 247, 0.03)),
+    var(--surface);
+  box-shadow: var(--shadow);
+  transform-style: preserve-3d;
+}
+
+.signal-header {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--gold);
+  font-weight: 900;
+}
+
+.signal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.stat-tile {
+  display: grid;
+  gap: 0.35rem;
+  min-height: 7rem;
+  align-content: space-between;
+  padding: 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(7, 17, 15, 0.68);
+}
+
+.stat-tile strong {
+  color: var(--mint);
+  font-size: 1.8rem;
+}
+
+.stat-tile span,
+.signal-board p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+@media (max-width: 860px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+  }
 }

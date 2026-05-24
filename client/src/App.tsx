@@ -1,17 +1,11 @@
 import Navigation from "./components/Navigation";
+import Hero from "./components/Hero";
 
 function App() {
   return (
-    <main className="site-shell" id="home">
+    <main className="site-shell">
       <Navigation />
-      <section className="intro-panel" aria-labelledby="portfolio-title">
-        <p className="eyebrow">AI/ML Engineer Portfolio</p>
-        <h1 id="portfolio-title">Ishank Mishra</h1>
-        <p className="intro-copy">
-          Building production-grade AI systems across LLM orchestration, RAG,
-          full stack products, and multi-agent workflows.
-        </p>
-      </section>
+      <Hero />
     </main>
   );
 }
