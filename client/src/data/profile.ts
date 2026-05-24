@@ -9,9 +9,9 @@ export const profile = {
     "AI/ML engineer specializing in LLM orchestration, multi-agent systems, and end-to-end AI application development with FastAPI, React, and modern Python stacks.",
   links: {
     github: "https://github.com/Ishank2301",
-    linkedin: "https://www.linkedin.com",
-    kaggle: "https://www.kaggle.com",
-    portfolio: "#home",
+    linkedin: "https://www.linkedin.com/in/ishank2301/",
+    kaggle: "https://www.kaggle.com/ishank2005",
+    portfolio: "https://ishankportfolio.netlify.app/",
   },
 };
 
@@ -73,7 +73,7 @@ export const projects = [
   {
     name: "LLM Fine-Tuning",
     type: "QLoRA on LLaMA 2",
-    href: "https://github.com/Ishank2301/LLM-Fine-Tuning",
+    href: "https://github.com/Ishank2301/LLM-Fine-Tuning-QLoRA-on-LLaMA-2",
     stack: ["PyTorch", "Hugging Face", "PEFT", "LoRA", "WandB"],
     impact:
       "Domain fine-tuning with 4-bit quantization, low-rank adaptation, and BLEU/ROUGE evaluation.",

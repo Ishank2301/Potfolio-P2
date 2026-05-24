@@ -11,6 +11,7 @@ fine-tuning, computer vision, and full stack AI products.
 - Project showcase for MediAgent, DeepReview-AI, chat-with-pdf-rag, LLM fine-tuning,
   and DBZ-Fighter.
 - Production build served by a small Express static server.
+- Resume links include GitHub, LinkedIn, Kaggle, and the live Netlify portfolio.
 
 ## Tech Stack
 
