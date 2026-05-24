@@ -1,6 +1,9 @@
+import Navigation from "./components/Navigation";
+
 function App() {
   return (
-    <main className="site-shell">
+    <main className="site-shell" id="home">
+      <Navigation />
       <section className="intro-panel" aria-labelledby="portfolio-title">
         <p className="eyebrow">AI/ML Engineer Portfolio</p>
         <h1 id="portfolio-title">Ishank Mishra</h1>
