@@ -367,6 +367,69 @@ h3 {
   font-weight: 750;
 }
 
+.projects-section {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 5rem 0;
+  scroll-margin-top: 6rem;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 1.4rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  display: grid;
+  grid-column: span 3;
+  gap: 1rem;
+  min-height: 25rem;
+  padding: 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(150deg, rgba(85, 242, 189, 0.12), transparent 42%),
+    rgba(14, 28, 26, 0.78);
+}
+
+.project-card:first-child {
+  grid-column: span 6;
+  min-height: 20rem;
+}
+
+.project-index {
+  color: var(--coral);
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.project-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.project-card h3 {
+  margin-top: 0.3rem;
+  font-size: clamp(1.55rem, 3vw, 2.6rem);
+}
+
+.project-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  align-self: end;
+  width: fit-content;
+  color: var(--mint);
+  font-weight: 900;
+}
+
 @media (max-width: 860px) {
   .hero-section {
     grid-template-columns: 1fr;
@@ -377,6 +440,18 @@ h3 {
   }
 
   .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-grid,
+  .project-card,
+  .project-card:first-child {
+    display: grid;
+    grid-column: span 1;
+    grid-template-columns: 1fr;
+  }
+
+  .project-grid {
     grid-template-columns: 1fr;
   }
 }
