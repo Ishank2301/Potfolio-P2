@@ -4,6 +4,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import CommandDeck from "./components/CommandDeck";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Skills />
       <Projects />
       <CommandDeck />
+      <Contact />
     </main>
   );
 }
